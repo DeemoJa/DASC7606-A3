@@ -117,7 +117,7 @@ def get_next_token_probabilities(model, tokenizer, prompt, options, device, max_
             **inputs,
             max_new_tokens=max_new_tokens,
             pad_token_id=tokenizer.eos_token_id,
-            temperature=0.6,
+            temperature=0.9,
             do_sample=True,
             num_return_sequences=1,
             eos_token_id=tokenizer.eos_token_id,
